@@ -21,7 +21,7 @@ typedef struct {
 } CoordinatesType;
 
 /* Pointers to structures: if we want to create a function which moves a point forward in both `x` and `y` directions, called `move`. Instead of sending two pointers, we can now send only one pointer to the function of the point structure: */
-void move(CoordinatesType * coordinates, bool applyDereference) {
+void move(CoordinatesType *coordinates, bool applyDereference) {
   if (applyDereference) {
     /* If we wish to dereference a structure (this concept is explained at the end of the file) and access one of it's internal members, we have a shorthand syntax for that, because this operation is widely used in data structures.*/
     coordinates->x += 1;
@@ -38,7 +38,7 @@ typedef struct {
   int age;
 } PersonType;
 
-void birthday(PersonType * person) {
+void birthday(PersonType *person) {
   person->age += 1;
 }
 
